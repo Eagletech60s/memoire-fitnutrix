@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles/signup.css">
+    <title>Fitnutrix</title>
+</head>
+<body>
+    <header>
+        <img src="svg/logo.svg" alt="Fitnutrix Logo" class="logo">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#service">Service</a>
+            <a href="#products">coach</a>
+            <a href="#products">Nutrition</a>
+            <a href="#products">feedback</a>
+            <a href="#about">About us</a>
+        </nav>
+        <div class="loginsignup">
+           <button id="login-button"><a href="index.html">Login</a></button>
+         
+        </div>
+    </header>
+    <div class="container-form">
+        <h2>Registration client</h2>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="fullName"> Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+                <label for="fullName"> userName:</label>
+                <input type="text" id="userName" name="username" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Other Details</legend>
+
+                <label for="images" class="drop-container" id="dropcontainer">
+                    <span class="drop-title">Drop image here</span>
+                    or
+                    <input type="file" id="images" accept="image/*" required>
+                </label>
+             
+                <form action="" id="objectife">
+
+                    <h3>Goal</h3>
+                    <label for="name-goal">name</label>
+                    <input type="text" id="goal" name="goal1">
+                    <label for="description-goal">description goal</label>
+                    <textarea name="description-goal" id="description-goal" cols="" rows="4"></textarea>
+                </form>
+
+                <form action="" id="etat-sant">
+                    <h3>etat santé</h3>
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" name="height" placeholder="cm">
+    
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" name="weight" placeholder="kg">
+                    <label for="medicalConditions">Medical Conditions:</label>
+                    <textarea id="medicalConditions" name="medicalConditions" rows="4"></textarea>
+                </form>
+
+                <form action="" id="mode-vie">
+                    <h3>mode vie</h3>
+                    <label for="type-job">type job</label>
+                    <input type="text" id="job" name="job">
+                    <label for="type-diets">diets</label>
+                    <input type="text" id="diets" name="diets">
+                    <label for="type-hours">hours sleep</label>
+                    <input type="number" id="sleep" name="sleep" placeholder="hour">
+                    <label for="water">water taken</label>
+                    <input type="number" id="water" name="water" placeholder="litre">
+                    <label for="type-job">daily actvites</label>
+                    <input type="text" id="actvites" name="actvites">
+                    
+                </form>
+
+            </fieldset>
+            <div class="btncontainer">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+                <a href="index.html" class="return"><button>return</button></a>
+            </div>
+
+        </form>
+
+    </div>
+    <script src="js/dark mode.js"></script>
+</body>
+</html>

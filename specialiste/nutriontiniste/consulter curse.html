@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/consulter curse.css ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> <!-- افترضت وجود ملف CSS لتنسيق البروفايل -->
+    <title>Fitnutrix</title>
+</head>
+<body>
+    <header>
+        <nav>
+        <img src="/svg/logo.svg" alt="Fitnutrix Logo" class="logo" style="z-index: 1; padding-left: 180px;">
+            <div class="search">
+                <i class="fas fa-search" style="color:#004AAD;"></i> <input type="search" name="" id="search" value="" placeholder="Search">
+            </div>
+            <div class="profile-dropdown">
+                <div onclick="toggle()" class="profile-dropdown-btn">
+                  <div class="profile-img">
+                    <i class="fa-solid fa-circle"></i>
+                  </div>
+        
+                  <span
+                    >bahaeddine
+                    <i class="fa-solid fa-angle-down"></i>
+                  </span>
+                </div>
+        
+                <ul class="profile-dropdown-list">
+                  <li class="profile-dropdown-list-item">
+                    <a href="#">
+                      <i class="fa-regular fa-user"></i>
+                      Edit Profile
+                    </a>
+                  </li>
+        
+                  <li class="profile-dropdown-list-item">
+                    <a href="#">
+                      <i class="fa-regular fa-envelope"></i>
+                      Inbox
+                    </a>
+                  </li>
+        
+                  <li class="profile-dropdown-list-item">
+                    <a href="#">
+                      <i class="fa-solid fa-chart-line"></i>
+                      Analytics
+                    </a>
+                  </li>
+        
+                  <li class="profile-dropdown-list-item">
+                    <a href="#">
+                      <i class="fa-solid fa-sliders"></i>
+                      Settings
+                    </a>
+                  </li>
+        
+                  <li class="profile-dropdown-list-item">
+                    <a href="#">
+                      <i class="fa-regular fa-circle-question"></i>
+                      Help & Support
+                    </a>
+                  </li>
+                  <hr />
+        
+                  <li class="profile-dropdown-list-item">
+                    <a href="#">
+                      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                      Log out
+                    </a>
+                  </li>
+                </ul>
+              </div>
+           
+        </nav>
+    </header>
+  
+    <aside class="sidebar">
+
+        <div class="sidebar-header">
+            <span class="menu-icon">
+                <i class="fa-solid fa-bars" id="menuIcon" style="color: #ffffff;"></i>
+                <h3>Menu</h3>
+      
+            </span>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="/user/index user.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="/client interface/add repas.html"><i class="fas fa-utensils"></i> Add Repas</a></li>
+            <li><a href="/client interface/ajouter curse.html"><i class="fas fa-plus"></i> Add Curse</a></li>
+            <li><a href="/client interface/consulter les recette.html"><i class="fas fa-eye"></i> View Recette</a></li>
+    <li><a href="/specialiste/consulter client profil.html"><i class="fas fa-eye"></i> View profile</a></li>
+            
+            <li><a href="/client interface/son profile.html"><i class="fas fa-user-edit"></i> Edit Profile</a></li>
+            <li><a href="/client interface/visualiser goals.html"><i class="fas fa-bullseye"></i> Visualiser Goal</a>
+            </li>
+            <li><a href="/specialiste/coach/add  exo.html"><i class="fas fa-dumbbell"></i> Add Exo</a></li>
+            <li><a href="/specialiste/planification Event.html"><i class="far fa-calendar-plus"></i> Add Event</a></li>
+            <li><a href="/specialiste/consulter evolution.html"><i class="fas fa-chart-line"></i> View Etat</a></li>
+            <li><a href="/specialiste/nutriontiniste/consulter curse.html"><i class="fas fa-book-open"></i> View
+                    Curse</a></li>
+            <li><a href="/specialiste/nutriontiniste/add recipe.html"><i class="fas fa-utensil-spoon"></i> Add
+                    Recipe</a></li>
+            <li><a href="/client interface/view exo.html"><i class="fas fa-eye"></i> View Exos</a></li>
+            <li><a href="/client interface/consulter recomendation.html"><i class="fas fa-eye"></i> View
+                    Recommendations</a></li>
+            <li><a href="/specialiste/add recomendation.html"><i class="fas fa-plus"></i> Add Recommendations</a></li>
+            <li><a href="/client interface/save etat.html"><i class="fas fa-plus"></i> Add Etat evoloution</a></li>
+            <li><a href="/specialiste/passer reclmation.html"><i class="fas fa-exclamation-triangle"></i> Passer
+                    Reclamation</a></li>
+            <li><a href="/specialiste/view demend suivi .html"><i class="fas fa-list-ul"></i> View Demand Suivi</a></li>
+        </ul>
+      
+      </aside>
+    
+    <div class="cures-user">
+        <div class="postes">
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="/images/customer01.jpg" alt="User Profile">
+                    <div class="user-name">John Doe</div>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/One-raw-egg-isolated-on-transparent-background-PNG.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/—Pngtree—apple is naturally thirsty and_6329766.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 2">
+                        Item 2
+                    </div>
+                  
+                    <!-- Add more items here -->
+                </div>
+                <button class="suggest-button" id="suggestRecipeBtn">Suggest Recipe</button>
+            </div>     <div class="post-container">
+                <div class="user-profile">
+                    <img src="/images/customer01.jpg" alt="User Profile">
+                    <div class="user-name">John Doe</div>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/One-raw-egg-isolated-on-transparent-background-PNG.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/—Pngtree—apple is naturally thirsty and_6329766.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 2">
+                        Item 2
+                    </div>
+                  
+                    <!-- Add more items here -->
+                </div>
+                <button class="suggest-button" id="suggestRecipeBtn">Suggest Recipe</button>
+            </div>
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="/images/customer01.jpg" alt="User Profile">
+                    <div class="user-name">John Doe</div>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/One-raw-egg-isolated-on-transparent-background-PNG.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/—Pngtree—apple is naturally thirsty and_6329766.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 2">
+                        Item 2
+                    </div>
+                  
+                    <!-- Add more items here -->
+                </div>
+                <button class="suggest-button">Suggest Recipe</button>
+            </div>     <div class="post-container">
+                <div class="user-profile">
+                    <img src="/images/customer01.jpg" alt="User Profile">
+                    <div class="user-name">John Doe</div>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/One-raw-egg-isolated-on-transparent-background-PNG.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/—Pngtree—apple is naturally thirsty and_6329766.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 2">
+                        Item 2
+                    </div>
+                  
+                    <!-- Add more items here -->
+                </div>
+                <button class="suggest-button" id="suggestRecipeBtn">Suggest Recipe</button>
+            </div>
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="/images/customer01.jpg" alt="User Profile">
+                    <div class="user-name">John Doe</div>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/One-raw-egg-isolated-on-transparent-background-PNG.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/—Pngtree—apple is naturally thirsty and_6329766.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 2">
+                        Item 2
+                    </div>
+                  
+                    <!-- Add more items here -->
+                </div>
+                <button class="suggest-button" id="suggestRecipeBtn">Suggest Recipe</button>
+            </div>     <div class="post-container">
+                <div class="user-profile">
+                    <img src="/images/customer01.jpg" alt="User Profile">
+                    <div class="user-name">John Doe</div>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/One-raw-egg-isolated-on-transparent-background-PNG.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/—Pngtree—apple is naturally thirsty and_6329766.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 2">
+                        Item 2
+                    </div>
+                  
+                    <!-- Add more items here -->
+                </div>
+                <button class="suggest-button">Suggest Recipe</button>
+            </div>
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="/images/customer01.jpg" alt="User Profile">
+                    <div class="user-name">John Doe</div>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/One-raw-egg-isolated-on-transparent-background-PNG.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/—Pngtree—apple is naturally thirsty and_6329766.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 2">
+                        Item 2
+                    </div>
+                  
+                    <!-- Add more items here -->
+                </div>
+                <button class="suggest-button">Suggest Recipe</button>
+            </div>     <div class="post-container">
+                <div class="user-profile">
+                    <img src="/images/customer01.jpg" alt="User Profile">
+                    <div class="user-name">John Doe</div>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/One-raw-egg-isolated-on-transparent-background-PNG.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/—Pngtree—apple is naturally thirsty and_6329766.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 2">
+                        Item 2
+                    </div>
+                  
+                    <!-- Add more items here -->
+                </div>
+                <button class="suggest-button" id="suggestRecipeBtn">Suggest Recipe</button>
+            </div>
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="/images/customer01.jpg" alt="User Profile">
+                    <div class="user-name">John Doe</div>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/One-raw-egg-isolated-on-transparent-background-PNG.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/—Pngtree—apple is naturally thirsty and_6329766.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 2">
+                        Item 2
+                    </div>
+                  
+                    <!-- Add more items here -->
+                </div>
+                <button class="suggest-button">Suggest Recipe</button>
+            </div>     <div class="post-container">
+                <div class="user-profile">
+                    <img src="/images/customer01.jpg" alt="User Profile">
+                    <div class="user-name">John Doe</div>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/One-raw-egg-isolated-on-transparent-background-PNG.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/—Pngtree—apple is naturally thirsty and_6329766.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 2">
+                        Item 2
+                    </div>
+                  
+                    <!-- Add more items here -->
+                </div>
+                <button class="suggest-button">Suggest Recipe</button>
+            </div>
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="/images/customer01.jpg" alt="User Profile">
+                    <div class="user-name">John Doe</div>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/One-raw-egg-isolated-on-transparent-background-PNG.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/—Pngtree—apple is naturally thirsty and_6329766.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 2">
+                        Item 2
+                    </div>
+                  
+                    <!-- Add more items here -->
+                </div>
+                <button class="suggest-button" id="suggestRecipeBtn">Suggest Recipe</button>
+            </div>     <div class="post-container">
+                <div class="user-profile">
+                    <img src="/images/customer01.jpg" alt="User Profile">
+                    <div class="user-name">John Doe</div>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/One-raw-egg-isolated-on-transparent-background-PNG.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/—Pngtree—apple is naturally thirsty and_6329766.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 2">
+                        Item 2
+                    </div>
+                  
+                    <!-- Add more items here -->
+                </div>
+                <button class="suggest-button" id="suggestRecipeBtn">Suggest Recipe</button>
+            </div>
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="/images/customer01.jpg" alt="User Profile">
+                    <div class="user-name">John Doe</div>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/One-raw-egg-isolated-on-transparent-background-PNG.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/—Pngtree—apple is naturally thirsty and_6329766.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 2">
+                        Item 2
+                    </div>
+                  
+                    <!-- Add more items here -->
+                </div>
+                <button class="suggest-button" id="suggestRecipeBtn">Suggest Recipe</button>
+            </div>     <div class="post-container">
+                <div class="user-profile">
+                    <img src="/images/customer01.jpg" alt="User Profile">
+                    <div class="user-name">John Doe</div>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/One-raw-egg-isolated-on-transparent-background-PNG.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/—Pngtree—apple is naturally thirsty and_6329766.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 2">
+                        Item 2
+                    </div>
+                  
+                    <!-- Add more items here -->
+                </div>
+                <button class="suggest-button">Suggest Recipe</button>
+            </div>
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="/images/customer01.jpg" alt="User Profile">
+                    <div class="user-name">John Doe</div>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/One-raw-egg-isolated-on-transparent-background-PNG.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/—Pngtree—apple is naturally thirsty and_6329766.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 2">
+                        Item 2
+                    </div>
+                  
+                    <!-- Add more items here -->
+                </div>
+                <button class="suggest-button" id="suggestRecipeBtn">Suggest Recipe</button>
+            </div>     <div class="post-container">
+                <div class="user-profile">
+                    <img src="/images/customer01.jpg" alt="User Profile">
+                    <div class="user-name">John Doe</div>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/One-raw-egg-isolated-on-transparent-background-PNG.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/—Pngtree—apple is naturally thirsty and_6329766.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 2">
+                        Item 2
+                    </div>
+                  
+                    <!-- Add more items here -->
+                </div>
+                <button class="suggest-button" id="suggestRecipeBtn">Suggest Recipe</button>
+            </div>
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="/images/customer01.jpg" alt="User Profile">
+                    <div class="user-name">John Doe</div>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/One-raw-egg-isolated-on-transparent-background-PNG.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/—Pngtree—apple is naturally thirsty and_6329766.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 2">
+                        Item 2
+                    </div>
+                  
+                    <!-- Add more items here -->
+                </div>
+                <button class="suggest-button" id="suggestRecipeBtn">Suggest Recipe</button>
+            </div>     <div class="post-container">
+                <div class="user-profile">
+                    <img src="/images/customer01.jpg" alt="User Profile">
+                    <div class="user-name">John Doe</div>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/One-raw-egg-isolated-on-transparent-background-PNG.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/—Pngtree—apple is naturally thirsty and_6329766.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 2">
+                        Item 2
+                    </div>
+                  
+                    <!-- Add more items here -->
+                </div>
+                <button class="suggest-button" id="suggestRecipeBtn">Suggest Recipe</button>
+            </div>
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="/images/customer01.jpg" alt="User Profile">
+                    <div class="user-name">John Doe</div>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/One-raw-egg-isolated-on-transparent-background-PNG.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/—Pngtree—apple is naturally thirsty and_6329766.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 2">
+                        Item 2
+                    </div>
+                  
+                    <!-- Add more items here -->
+                </div>
+                <button class="suggest-button" id="suggestRecipeBtn">Suggest Recipe</button>
+            </div>     <div class="post-container">
+                <div class="user-profile">
+                    <img src="/images/customer01.jpg" alt="User Profile">
+                    <div class="user-name">John Doe</div>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/One-raw-egg-isolated-on-transparent-background-PNG.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/—Pngtree—apple is naturally thirsty and_6329766.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 2">
+                        Item 2
+                    </div>
+                  
+                    <!-- Add more items here -->
+                </div>
+                <button class="suggest-button" id="suggestRecipeBtn">Suggest Recipe</button>
+            </div>
+                                                               <div class="post-container">
+                <div class="user-profile">
+                    <img src="/images/customer01.jpg" alt="User Profile">
+                    <div class="user-name">John Doe</div>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/One-raw-egg-isolated-on-transparent-background-PNG.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/—Pngtree—apple is naturally thirsty and_6329766.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 2">
+                        Item 2
+                    </div>
+                  
+                    <!-- Add more items here -->
+                </div>
+                <button class="suggest-button" id="suggestRecipeBtn">Suggest Recipe</button>
+
+            </div>     <div class="post-container">
+                <div class="user-profile">
+                    <img src="/images/customer01.jpg" alt="User Profile">
+                    <div class="user-name">John Doe</div>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 1">
+                        Item 1
+                    </div>
+                    <div class="item">
+                        <img src="/images/One-raw-egg-isolated-on-transparent-background-PNG.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/—Pngtree—apple is naturally thirsty and_6329766.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <div class="item">
+                        <img src="/images/viand.png" alt="Item 2">
+                        Item 2
+                    </div>
+                    <!-- Add more items here -->
+                </div>
+                <button class="suggest-button" id="suggestRecipeBtn">Suggest Recipe</button>
+            </div>                                                                                                                             
+        </div>
+    </div>
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="recipeForm">
+                <input type="text" name="recipeName" placeholder="Recipe Name">
+                <input type="file" name="recipeImage" accept="image/*" placeholder="Recipe Image">
+                <textarea name="recipeDescription" placeholder="Recipe Description"></textarea>
+                <button type="button" id="addRecipe">Add Recipe</button>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+
+    
+</body>
+<script>
+      // استهداف الزر بواسطة الهوية (ID)
+      var reviewBtn = document.getElementById('suggestRecipeBtn');
+  
+  // إضافة مستمع حدث النقر
+  reviewBtn.addEventListener('click', function() {
+    // توجيه المستخدم إلى الصفحة الأخرى عند النقر على الزر
+    window.location.href = '/specialiste/nutriontiniste/add recipe.html'; // قم بتغيير 'reviews.html' إلى عنوان URL الفعلي للصفحة الأخرى
+  });
+</script>
+<script src="/js/toglle.js"></script>
+<script src="/js/formfucntion.js"></script>
+</html>

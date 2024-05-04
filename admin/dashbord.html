@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title> Admin Dashboard </title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="/styles/styledashbord.css">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+    
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+
+                        </span>
+                        <span class="title">Fitnutrix</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">specialists</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fas fa-user-plus"></i>
+                        </span>
+                        <span class="title">request registre </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </span>
+                        <span class="title">reports</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fas fa-calendar"></i>
+                        </span>
+                        <span class="title">Events</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/admin/add ads.html">
+                        <span class="icon">
+                            <i class="fas fa-ad"></i>
+                        </span>
+                        <span class="title">Passer ads </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fas fa-dollar-sign"></i>
+
+                        </span>
+                        <span class="title">consulter ads </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                
+                
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+              
+                <div class="user">
+                    <img src="/images/customer01.jpg" alt="">
+                  
+                </div>
+                <div class="theme-toggle">
+                    <i class="fas fa-sun light-mode-icon"></i>
+                    <i class="fas fa-moon dark-mode-icon" style="display: none;"></i>
+                  </div>
+            </div>
+
+            <!-- ======================= Cards ================== -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,504</div>
+                        <div class="cardName">USER</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">10</div>
+                        <div class="cardName">coach</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="people-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">10</div>
+                        <div class="cardName">nutritionists</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="people-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">$7,842</div>
+                        <div class="cardName">Earning</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================ Order Details List ================= -->
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Recent Orders</h2>
+                        <a href="#" class="btnall">View All</a>
+                    </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>pic</td>
+                                <td>Name</td>
+                                <td>username</td>
+                                <td>Email</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx"><img src="/images/customer01.jpg" alt=""></div>
+                                </td>
+                                <td>John</td>
+                                <td>John</td>
+
+                                <td>john@email.com</td>
+                                <td><span class="status delivered">
+                                        <!-- ايقونة القبول -->
+                                        <button class="accept-icon">
+                                            <i class="fas fa-check"></i>
+                                        </button>
+
+                                        <!-- ايقونة الرفض -->
+                                        <button class="reject-icon">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx"><img src="/images/customer01.jpg" alt=""></div>
+                                </td>
+                                <td>John</td>
+                                <td>John</td>
+
+                                <td>john@email.com</td>
+                                <td><span class="status delivered">
+                                        <!-- ايقونة القبول -->
+                                        <button class="accept-icon">
+                                            <i class="fas fa-check"></i>
+                                        </button>
+
+                                        <!-- ايقونة الرفض -->
+                                        <button class="reject-icon">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx"><img src="/images/customer01.jpg" alt=""></div>
+                                </td>
+                                <td>John</td>
+                                <td>John</td>
+
+                                <td>john@email.com</td>
+                                <td><span class="status delivered">
+                                        <!-- ايقونة القبول -->
+                                        <button class="accept-icon">
+                                            <i class="fas fa-check"></i>
+                                        </button>
+
+                                        <!-- ايقونة الرفض -->
+                                        <button class="reject-icon">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx"><img src="/images/customer01.jpg" alt=""></div>
+                                </td>
+                                <td>John</td>
+                                <td>John</td>
+
+                                <td>john@email.com</td>
+                                <td><span class="status delivered">
+                                        <!-- ايقونة القبول -->
+                                        <button class="accept-icon">
+                                            <i class="fas fa-check"></i>
+                                        </button>
+
+                                        <!-- ايقونة الرفض -->
+                                        <button class="reject-icon">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx"><img src="/images/customer01.jpg" alt=""></div>
+                                </td>
+                                <td>John</td>
+                                <td>John</td>
+
+                                <td>john@email.com</td>
+                                <td><span class="status delivered">
+                                        <!-- ايقونة القبول -->
+                                        <button class="accept-icon">
+                                            <i class="fas fa-check"></i>
+                                        </button>
+
+                                        <!-- ايقونة الرفض -->
+                                        <button class="reject-icon">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx"><img src="/images/customer01.jpg" alt=""></div>
+                                </td>
+                                <td>John</td>
+                                <td>John</td>
+
+                                <td>john@email.com</td>
+                                <td><span class="status delivered">
+                                        <!-- ايقونة القبول -->
+                                        <button class="accept-icon">
+                                            <i class="fas fa-check"></i>
+                                        </button>
+
+                                        <!-- ايقونة الرفض -->
+                                        <button class="reject-icon">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx"><img src="/images/customer01.jpg" alt=""></div>
+                                </td>
+                                <td>John</td>
+                                <td>John</td>
+
+                                <td>john@email.com</td>
+                                <td><span class="status delivered">
+                                        <!-- ايقونة القبول -->
+                                        <button class="accept-icon">
+                                            <i class="fas fa-check"></i>
+                                        </button>
+
+                                        <!-- ايقونة الرفض -->
+                                        <button class="reject-icon">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ================= New Customers ================ -->
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Customers</h2>
+                    </div>
+
+                    <table>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="/images/customer02.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>David <br> <span>john</span></h4>
+                            </td>
+                            <td>
+                                <button class="del">del <i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="/images/customer02.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>David <br> <span>john</span></h4>
+                            </td>
+                            <td>
+                                <button class="del">del <i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="/images/customer02.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>David <br> <span>john</span></h4>
+                            </td>
+                            <td>
+                                <button class="del">del <i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="/images/customer02.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>David <br> <span>john</span></h4>
+                            </td>
+                            <td>
+                                <button class="del">del <i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="/images/customer02.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>David <br> <span>john</span></h4>
+                            </td>
+                            <td>
+                                <button class="del">del <i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="/images/customer02.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>David <br> <span>john</span></h4>
+                            </td>
+                            <td>
+                                <button class="del">del <i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="specialists-container">
+                <div class="cardHeader">
+                    <h2>Specialists</h2>
+                </div>
+                <div class="specialist-cards">
+                    <div class="specialist-card">
+                        <div class="specialist-image">
+                            <img src="/images/coach2.png" alt="Specialist 1">
+                        </div>
+                        <div class="specialist-info">
+                            <h3 class="specialist-name">Jane Smith</h3>
+                            <p class="specialist-username">janesmith</p>
+                            <p class="specialist-email">janesmith@example.com</p>
+                            <div class="specialist-feedback">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <button class="del">del <i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                    <div class="specialist-card">
+                        <div class="specialist-image">
+                            <img src="/images/coach2.png" alt="Specialist 1">
+                        </div>
+                        <div class="specialist-info">
+                            <h3 class="specialist-name">Jane Smith</h3>
+                            <p class="specialist-username">janesmith</p>
+                            <p class="specialist-email">janesmith@example.com</p>
+                            <div class="specialist-feedback">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <button class="del">del <i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                    <div class="specialist-card">
+                        <div class="specialist-image">
+                            <img src="/images/coach2.png" alt="Specialist 1">
+                        </div>
+                        <div class="specialist-info">
+                            <h3 class="specialist-name">Jane Smith</h3>
+                            <p class="specialist-username">janesmith</p>
+                            <p class="specialist-email">janesmith@example.com</p>
+                            <div class="specialist-feedback">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <button class="del">del <i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                    <div class="specialist-card">
+                        <div class="specialist-image">
+                            <img src="/images/coach2.png" alt="Specialist 1">
+                        </div>
+                        <div class="specialist-info">
+                            <h3 class="specialist-name">Jane Smith</h3>
+                            <p class="specialist-username">janesmith</p>
+                            <p class="specialist-email">janesmith@example.com</p>
+                            <div class="specialist-feedback">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <button class="del">del <i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                    <div class="specialist-card">
+                        <div class="specialist-image">
+                            <img src="/images/coach2.png" alt="Specialist 1">
+                        </div>
+                        <div class="specialist-info">
+                            <h3 class="specialist-name">Jane Smith</h3>
+                            <p class="specialist-username">janesmith</p>
+                            <p class="specialist-email">janesmith@example.com</p>
+                            <div class="specialist-feedback">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <button class="del">del <i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                    <div class="specialist-card">
+                        <div class="specialist-image">
+                            <img src="/images/coach2.png" alt="Specialist 1">
+                        </div>
+                        <div class="specialist-info">
+                            <h3 class="specialist-name">Jane Smith</h3>
+                            <p class="specialist-username">janesmith</p>
+                            <p class="specialist-email">janesmith@example.com</p>
+                            <div class="specialist-feedback">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <button class="del">del <i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                    <div class="specialist-card">
+                        <div class="specialist-image">
+                            <img src="/images/coach2.png" alt="Specialist 1">
+                        </div>
+                        <div class="specialist-info">
+                            <h3 class="specialist-name">Jane Smith</h3>
+                            <p class="specialist-username">janesmith</p>
+                            <p class="specialist-email">janesmith@example.com</p>
+                            <div class="specialist-feedback">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <button class="del">del <i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                    <div class="specialist-card">
+                        <div class="specialist-image">
+                            <img src="/images/coach2.png" alt="Specialist 1">
+                        </div>
+                        <div class="specialist-info">
+                            <h3 class="specialist-name">Jane Smith</h3>
+                            <p class="specialist-username">janesmith</p>
+                            <p class="specialist-email">janesmith@example.com</p>
+                            <div class="specialist-feedback">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <button class="del">del <i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Add more specialist cards as needed -->
+                </div>
+            </div>
+            <!-- Replace the existing ".recentOrders" section with this -->
+            <div class="events-container">
+                <div class="cardHeader">
+                    <h2>Events</h2>
+                    <a href="#" class="btn">View All</a>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Image</td>
+                            <td>Name</td>
+                            <td>Location</td>
+                            <td>Date</td>
+                            <td>Price</td>
+                            <td>File</td>
+                            <td>choose</td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="/images/Event1.png" alt="Event 1"></div>
+                            </td>
+                            <td>Fitness Workshop</td>
+                            <td>Gym Center, New York</td>
+                            <td>April 15, 2023</td>
+                            <td>$50</td>
+                            <td><a href="#" class="event-file">Download</a></td>
+                            <td class="status delivered">
+                                <button class="accept-icon">
+                                    <i class="fas fa-check"></i>
+                                </button>
+
+                                <!-- ايقونة الرفض -->
+                                <button class="reject-icon">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="/images/Event1.png" alt="Event 1"></div>
+                            </td>
+                            <td>Fitness Workshop</td>
+                            <td>Gym Center, New York</td>
+                            <td>April 15, 2023</td>
+                            <td>$50</td>
+                            <td><a href="#" class="event-file">Download</a></td>
+                            <td class="status delivered">
+                                <button class="accept-icon">
+                                    <i class="fas fa-check"></i>
+                                </button>
+
+                                <!-- ايقونة الرفض -->
+                                <button class="reject-icon">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="/images/Event1.png" alt="Event 1"></div>
+                            </td>
+                            <td>Fitness Workshop</td>
+                            <td>Gym Center, New York</td>
+                            <td>April 15, 2023</td>
+                            <td>$50</td>
+                            <td><a href="#" class="event-file">Download</a></td>
+                            <td class="status delivered">
+                                <button class="accept-icon">
+                                    <i class="fas fa-check"></i>
+                                </button>
+
+                                <!-- ايقونة الرفض -->
+                                <button class="reject-icon">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- Add more event rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="events-container">
+                <div class="cardHeader">
+                    <h2>reclmation</h2>
+                    <a href="#" class="btn">View All</a>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Image</td>
+                            <td>Name of reporter</td>
+                            <td>Image</td>
+                            <td>Name of reported</td>
+                            <td>reason</td>
+                            <td>File</td>
+                            
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="/images/customer01.jpg" alt="Event 1"></div>
+                            </td>
+                            <td>john stones</td>
+                            <td width="60px">
+                                <div class="imgBx"><img src="/images/customer01.jpg" alt="Event 1"></div>
+                            </td>
+                            <td>janesmith</td>
+                            <td>bad work</td>
+                            <td><a href="#" class="event-file">Download</a></td>
+                           
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="/images/coach3.png" alt="Event 1"></div>
+                            </td>
+                            <td>john stones</td>
+                            <td width="60px">
+                                <div class="imgBx"><img src="/images/customer03.png" alt="Event 1"></div>
+                            </td>
+                            <td>janesmith</td>
+                            <td>bad work</td>
+                            <td><a href="#" class="event-file">Download</a></td>
+                           
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="/images/coach2.png" alt="Event 1"></div>
+                            </td>
+                            <td>john stones</td>
+                            <td width="60px">
+                                <div class="imgBx"><img src="/images/customer01.jpg" alt="Event 1"></div>
+                            </td>
+                            <td>janesmith</td>
+                            <td>bad work</td>
+                            <td><a href="#" class="event-file">Download</a></td>
+                           
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="/images/customer01.jpg" alt="Event 1"></div>
+                            </td>
+                            <td>john stones</td>
+                            <td width="60px">
+                                <div class="imgBx"><img src="/images/coach1.png" alt="Event 1"></div>
+                            </td>
+                            <td>janesmith</td>
+                            <td>bad work</td>
+                            <td><a href="#" class="event-file">Download</a></td>
+                           
+                        </tr>
+                        <!-- Add more event rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="events-container">
+                <div class="cardHeader">
+                    <h2>ads</h2>
+                    <a href="#" class="btn">View All</a>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Image</td>
+                            <td>date debut</td>
+                            <td>date fin</td>
+                            <td>description</td>
+                            <td>file</td>
+
+                            
+                            
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="/images/event2.png" alt="Event 1"></div>
+                            </td>
+                            <td>18/08/2024</td>
+                            <td>18/09/2024</td>
+                            <td>ads for Sports boot</td>
+                            <td><a href="#" class="event-file">Download</a></td>
+                           
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="/images/event2.png" alt="Event 1"></div>
+                            </td>
+                            <td>18/08/2024</td>
+                        
+                            <td>18/09/2024</td>
+                            <td>ads for Sports boot</td>
+                            <td><a href="#" class="event-file">Download</a></td>
+                           
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="/images/event2.png" alt="Event 1"></div>
+                            </td>
+                            <td>18/08/2024</td>
+                        
+                            <td>18/09/2024</td>
+                            <td>ads for Sports boot</td>
+                            <td><a href="#" class="event-file">Download</a></td>
+                           
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="/images/event3.png" alt="Event 1"></div>
+                            </td>
+                            <td>18/08/2024</td>
+                        
+                            <td>18/09/2024</td>
+                            <td>ads for Sports boot</td>
+                            <td><a href="#" class="event-file">Download</a></td>
+                           
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="/images/event2.png" alt="Event 1"></div>
+                            </td>
+                            <td>18/08/2024</td>
+                        
+                            <td>18/09/2024</td>
+                            <td>ads for Sports boot</td>
+                            <td><a href="#" class="event-file">Download</a></td>
+                           
+                        </tr>
+                        <!-- Add more event rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========== Scripts =========  -->
+    <script src="/js/main.js"></script>
+    <script src="/js/dashborddarkmode.js "></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

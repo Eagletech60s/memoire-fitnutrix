@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/log-in.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/user-add.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="shortcut icon" href="/svg/logo.svg" type="image/x-icon">
+    <title>Fitnutrix</title>
+</head>
+<body>
+    <header>
+        <img src="svg/logo.svg" alt="Fitnutrix Logo" class="logo">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#service">Service</a>
+            <a href="#products">coach</a>
+            <a href="#products">Nutrition</a>
+            <a href="#products">feedback</a>
+            <a href="#about">About us</a>
+        </nav>
+        <div class="loginsignup">
+           <button id="login-button"><a href="#login">Login</a></button>
+           <button id="inscription-button"><a href="#choose-inscription">Sign up</a></button>
+           <a href="#" id="mode-toggle">
+            <i class="fas fa-moon"></i> <!-- أيقونة الوضع الليلي -->
+        </a>
+        </div>
+    </header>
+<main>
+  <div class="chose" id="choose-inscription" style="display: none;"  >
+    <span class="close-btn">&times;</span>
+    <a href="/client interface/sing up client.html"><button>as client</button></a>
+    <a href="/specialiste/singup coach.html"><button>as specialists</button></a>
+    <a href="signup admin.html"><button>as admin</button></a>
+  </div>
+  <div class="login-form" id="login-form">
+    <span class="close-icon" onclick="closeLoginForm()">&times;</span>
+    <h2>Login</h2>
+    <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Login</button>
+        <a href="" style="text-decoration: none;" onclick="forgotPassword()">Forget Account</a>
+        <a href="sing up.html">create Account</a>
+    </form>
+    <div class="error-message" id="error-message" style="display: none;"></div>
+</div>
+
+    <div class="intro">
+        <img src="/svg/Online Doctor-rafiki.svg " alt="" class="seqimg" >
+        <div class="intro-text">
+            <h3>Welcome to Fitnutrix</h3>
+            <p>
+                <div>Join us to achieve your health</div>
+                <div>and fitness goals</div>
+                <div>with the best trainers and nutritionists.</div>
+            </p>
+            <button class="get-started-btn">Get Started</button>
+        </div>
+        <img src="/svg/coah and plyer.svg" alt="" class="firstimg">
+    </div>
+</main>
+<br><br><br>
+<section id="featured-services" class="featured-services" style="text-decoration: none;"data-aos="slide-up">
+    <div class="container">
+        <div class="title" style="font-size: 2.2em;
+        font-weight: 800;
+        text-align: center;">Our <span class="title-sous">Service</span></div>
+      <div class="cards">
+        <div class="card" style="text-decoration: none;"data-aos="slide-up">
+          <div class="service-box">
+            <div class="icon"><i class="fas fa-heartbeat"></i></div>
+            <h4 class="title"><a href="">Normal checkup</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti 2 times per month quas molestias excepturi</p>
+          </div>
+        </div>
+  
+        <div class="card" style="text-decoration: none;"data-aos="slide-up">
+          <div class="service-box">
+            <div class="icon"><i class="fas fa-dna"></i></div>
+            <h4 class="title"><a href="">Blood Test</a></h4>
+            <p class="description">At vero eos et accusamus et 1 week odio dignissimos ducimus qui blanditiis</p>
+          </div>
+        </div>
+        
+        <div class="card" style="text-decoration: none;"data-aos="slide-up">
+          <div class="service-box">
+            <div class="icon"><i class="fas fa-temperature-high"></i></div>
+            <h4 class="title"><a href="">Body temperature</a></h4>
+            <p class="description">Excepteur sint occaecat 37.6 non proident, 98.6 sunt in culpa qui officia</p>
+          </div>
+        </div>
+  
+        <div class="card" style="text-decoration: none;"data-aos="slide-up">
+          <div class="service-box">
+            <div class="icon"><i class="fas fa-hand-holding-medical"></i></div>
+            <h4 class="title"><a href="">Medicine use</a></h4>
+            <p class="description">Duis aute dolor 10-12 in reprehenderit in voluptate 8-12 velit esse cillum dolore</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="section" id="about" style="text-decoration: none;"data-aos="slide-up">
+    <div class="container" style="text-decoration: none;"data-aos="slide-up">
+        <div class="content-section" style="text-decoration: none;"data-aos="slide-up">
+            <div class="title">
+                <h1>About <span class="title-sous">Us</span></h1>
+            </div>
+            <div class="content" style="text-decoration: none;"data-aos="slide-up">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+                <div class="button">
+                    <a href="">Read More</a>
+                </div>
+            </div>
+            <div class="social">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="image-section" style="text-decoration: none;"data-aos="slide-up">
+            <img src="/images/about us.jpg ">
+        </div>
+    </div>
+</section>
+<br><br><br>
+<section id="trainers" style="text-decoration: none;"data-aos="slide-up">
+  <div class="title" style="font-size: 2.2em;
+  font-weight: 800;
+  text-align: center;">Our <span class="title-sous">coach</span></div>
+  <div class="slide-container">
+    <div class="slide-content">
+      <div class="card-wrapper">
+        <div class="card" style="text-decoration: none;"data-aos="slide-up">
+          <div class="card-image">
+            <img src="/images/coach1.png" alt="Profile image">
+          </div>
+          <p class="name">Julie Watson</p>
+          <p>fitness</p>
+          <div class="ratings">
+            <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <button class="review-btn">Reviews</button>
+          </div>
+          <div class="socials">
+            <button class="email"><i class="fas fa-envelope"></i></button>
+            <button class="facebook"><i class="fab fa-facebook-f"></i></button>
+            <button class="instagram"><i class="fab fa-instagram"></i></button>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur delectus, mollitia tenetur libero quam recusandae alias in incidunt.</p>
+          <button class="subscribe">Subscribe</button>
+        </div>
+        <div class="card" style="text-decoration: none;"data-aos="slide-up">
+          <div class="card-image">
+            <img src="/images/coach3.png" alt="Profile image">
+          </div>
+          <p class="name">Julie Watson</p>
+          <p>fitness</p>
+          <div class="ratings">
+            <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <button class="review-btn">Reviews</button>
+          </div>
+          <div class="socials">
+            <button class="email"><i class="fas fa-envelope"></i></button>
+            <button class="facebook"><i class="fab fa-facebook-f"></i></button>
+            <button class="instagram"><i class="fab fa-instagram"></i></button>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur delectus, mollitia tenetur libero quam recusandae alias in incidunt.</p>
+          <button class="subscribe">Subscribe</button>
+        </div>
+        <div class="card" style="text-decoration: none;"data-aos="slide-up">
+          <div class="card-image">
+            <img src="images/coach2.png" alt="Profile image">
+          </div>
+          <p class="name">Julie Watson</p>
+          <p>fitness</p>
+          <div class="ratings">
+            <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <button class="review-btn">Reviews</button>
+          </div>
+          <div class="socials">
+            <button class="email"><i class="fas fa-envelope"></i></button>
+            <button class="facebook"><i class="fab fa-facebook-f"></i></button>
+            <button class="instagram"><i class="fab fa-instagram"></i></button>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur delectus, mollitia tenetur libero quam recusandae alias in incidunt.</p>
+          <button class="subscribe">Subscribe</button>
+        </div>
+        <!-- Add more cards here -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="nutritionists"style="text-decoration: none;"data-aos="slide-up">
+  <div class="title" style="font-size: 2.2em;
+  font-weight: 800;
+  text-align: center;">Our <span class="title-sous">Nutrition specialists</span></div>
+  <div class="slide-container">
+    <div class="slide-content">
+      <div class="card-wrapper">
+        <div class="card" style="text-decoration: none;"data-aos="slide-up">
+          <div class="card-image">
+            <img src="/images/medcin1.png" alt="Profile image">
+          </div>
+          <p class="name">Julie Watson</p>
+          <p>fitness</p>
+          <div class="ratings">
+            <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <button class="review-btn">Reviews</button>
+          </div>
+          <div class="socials">
+            <button class="email"><i class="fas fa-envelope"></i></button>
+            <button class="facebook"><i class="fab fa-facebook-f"></i></button>
+            <button class="instagram"><i class="fab fa-instagram"></i></button>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur delectus, mollitia tenetur libero quam recusandae alias in incidunt.</p>
+          <button class="subscribe">Subscribe</button>
+        </div>
+        <div class="card" style="text-decoration: none;"data-aos="slide-up">
+          <div class="card-image">
+            <img src="/images/medcin2.png" alt="Profile image">
+          </div>
+          <p class="name">Julie Watson</p>
+          <p>fitness</p>
+          <div class="ratings">
+            <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <button class="review-btn">Reviews</button>
+          </div>
+          <div class="socials">
+            <button class="email"><i class="fas fa-envelope"></i></button>
+            <button class="facebook"><i class="fab fa-facebook-f"></i></button>
+            <button class="instagram"><i class="fab fa-instagram"></i></button>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur delectus, mollitia tenetur libero quam recusandae alias in incidunt.</p>
+          <button class="subscribe">Subscribe</button>
+        </div>
+        <div class="card" style="text-decoration: none;"data-aos="slide-up">
+          <div class="card-image">
+            <img src="/images/medcin3.png" alt="Profile image">
+          </div>
+          <p class="name">Julie Watson</p>
+          <p>fitness</p>
+          <div class="ratings">
+            <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <button class="review-btn">Reviews</button>
+          </div>
+          <div class="socials">
+            <button class="email"><i class="fas fa-envelope"></i></button>
+            <button class="facebook"><i class="fab fa-facebook-f"></i></button>
+            <button class="instagram"><i class="fab fa-instagram"></i></button>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur delectus, mollitia tenetur libero quam recusandae alias in incidunt.</p>
+          <button class="subscribe">Subscribe</button>
+        </div>
+        <!-- Add more cards here -->
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="containere">
+    <div class="row">
+      <div class="col" id="company">
+        <img src="/svg/logo.svg" alt="" class="logo">
+        <p>
+          Fitnutrix is a health and fitness website offering the latest articles and resources on nutrition and exercise. Discover how we can help you achieve your health goals today.
+        </p>
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="col" id="useful-links">
+        <h3>Useful Links</h3>
+        <div class="links">
+          <a href="#">About Us</a>
+          <a href="#">Services</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="col" id="contact">
+        <h3>Contact</h3>
+        <div class="contact-details">
+          <i class="fa fa-location"></i>
+          <p>Sports Street, Constantine, Algeria</p>
+        </div>
+        <div class="contact-details">
+          <i class="fa fa-phone"></i>
+          <p>+213-123456789</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form">
+        <form action="">
+          <input type="email" placeholder="Email Address">
+          <button><i class="fa fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script> 
+// demende inscription //
+const inscriptionButton = document.getElementById('inscription-button');
+const chooseInscription = document.getElementById('choose-inscription');
+const closeBtn = chooseInscription.querySelector('.close-btn');
+
+closeBtn.addEventListener('click', function() {
+  chooseInscription.style.display = 'none';
+});
+
+  inscriptionButton.addEventListener('click', function() {
+    chooseInscription.style.display = 'block';
+  }); 
+  ///end *****************************///    
+   document.getElementById("login-button").addEventListener("click", function() {
+            document.getElementById("login-form").style.display = "block";
+        });
+
+        // Function to close login form
+        function closeLoginForm() {
+            document.getElementById("login-form").style.display = "none";
+        }
+
+        // Function to handle forgot password
+        function forgotPassword() {
+            alert("Please contact support to reset your password.");
+        }
+
+        // Form submission handling
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get form inputs
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Check if username and password are correct (for demonstration purposes)
+            if (username === "admin" && password === "password") {
+                // Redirect to dashboard or perform any other action
+                alert("Login successful! Redirecting...");
+                window.location.href = "dashboard.html"; // Change the URL to the dashboard page
+            } else {
+                // Show error message
+                document.getElementById("error-message").innerText = "Invalid username or password. Please try again.";
+                document.getElementById("error-message").style.display = "block";
+            }
+        });
+</script>  
+    <script src="js/dark mode.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+      offset:100,
+      duration:800
+    });
+
+    </script>
+</body>
+</html>
+

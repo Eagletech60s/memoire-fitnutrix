@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/log-in.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/user-add.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Acme&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="shortcut icon" href="/svg/logo.svg" type="image/x-icon">
+  <title>Fitnutrix</title>
+</head>
+
+<body>
+  <header>
+    <div class="logomenu">
+      <div id="menu-bar" style="z-index: 1000;"><i class="fas fa-bars" style="color: rgb(21, 1, 109);
+        font-size: 1.3em;"></i>
+        </div>
+      <img src="/svg/logo.svg" alt="Fitnutrix Logo" class="logo">
+
+    </div>
+  
+    
+    
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#service">Service</a>
+      <a href="#products">coach</a>
+      <a href="#products">Nutrition</a>
+      <a href="#products">feedback</a>
+      <a href="#about">About us</a>
+    </nav>
+
+    <div class="profile-dropdown">
+      <a href="#" id="mode-toggle" style="text-decoration: none;">
+        <i class="fas fa-moon"></i> <!-- أيقونة الوضع الليلي -->
+      </a>
+      <div onclick="toggle()" class="profile-dropdown-btn">
+        <div class="profile-img">
+          <i class="fa-solid fa-circle"></i>
+        </div>
+
+        <span>bahaeddine
+          <i class="fa-solid fa-angle-down"></i>
+        </span>
+      </div>
+
+      <ul class="profile-dropdown-list">
+        <li class="profile-dropdown-list-item">
+          <a href="#">
+            <i class="fa-regular fa-user"></i>
+            Edit Profile
+          </a>
+        </li>
+
+        <li class="profile-dropdown-list-item">
+          <a href="#">
+            <i class="fa-regular fa-envelope"></i>
+            Inbox
+          </a>
+        </li>
+
+        <li class="profile-dropdown-list-item">
+          <a href="#">
+            <i class="fa-solid fa-chart-line"></i>
+            Analytics
+          </a>
+        </li>
+
+        <li class="profile-dropdown-list-item">
+          <a href="#">
+            <i class="fa-solid fa-sliders"></i>
+            Settings
+          </a>
+        </li>
+
+        <li class="profile-dropdown-list-item">
+          <a href="#">
+            <i class="fa-regular fa-circle-question"></i>
+            Help & Support
+          </a>
+        </li>
+        <hr />
+
+        <li class="profile-dropdown-list-item">
+          <a href="#">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            Log out
+          </a>
+        </li>
+      </ul>
+     
+    </div>
+  
+  </header>
+  <aside class="sidebar">
+
+    <div class="sidebar-header">
+      
+            <h3>Menu</h3>
+
+        </span>
+    </div>
+    <ul class="sidebar-menu">
+      <li><a href="/user/index user.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="/client interface/add repas.html"><i class="fas fa-utensils"></i> Add Repas</a></li>
+      <li><a href="/client interface/ajouter curse.html"><i class="fas fa-plus"></i> Add Curse</a></li>
+      <li><a href="/client interface/consulter les recette.html"><i class="fas fa-eye"></i> View Recette</a></li>
+    <li><a href="/specialiste/consulter client profil.html"><i class="fas fa-eye"></i> View profile</a></li>
+      <li><a href="/client interface/son profile.html"><i class="fas fa-user-edit"></i> Edit Profile</a></li>
+      <li><a href="/client interface/visualiser goals.html"><i class="fas fa-bullseye"></i> Visualiser Goal</a>
+      </li>
+      <li><a href="/specialiste/coach/add  exo.html"><i class="fas fa-dumbbell"></i> Add Exo</a></li>
+      <li><a href="/specialiste/planification Event.html"><i class="far fa-calendar-plus"></i> Add Event</a></li>
+      <li><a href="/specialiste/consulter evolution.html"><i class="fas fa-chart-line"></i> View Etat</a></li>
+      <li><a href="/specialiste/nutriontiniste/consulter curse.html"><i class="fas fa-book-open"></i> View
+              Curse</a></li>
+      <li><a href="/specialiste/nutriontiniste/add recipe.html"><i class="fas fa-utensil-spoon"></i> Add
+              Recipe</a></li>
+      <li><a href="/client interface/view exo.html"><i class="fas fa-eye"></i> View Exos</a></li>
+      <li><a href="/client interface/consulter recomendation.html"><i class="fas fa-eye"></i> View
+              Recommendations</a></li>
+      <li><a href="/specialiste/add recomendation.html"><i class="fas fa-plus"></i> Add Recommendations</a></li>
+      <li><a href="/client interface/save etat.html"><i class="fas fa-plus"></i> Add Etat evoloution</a></li>
+      <li><a href="/specialiste/passer reclmation.html"><i class="fas fa-exclamation-triangle"></i> Passer
+              Reclamation</a></li>
+      <li><a href="/specialiste/view demend suivi .html"><i class="fas fa-list-ul"></i> View Demand Suivi</a></li>
+  </ul>
+
+</aside>
+ 
+  <main>
+    <div class="chose" id="choose-inscription" style="display: none;">
+      <span class="close-btn">&times;</span>
+      <a href="sing up client.html"><button>as client</button></a>
+      <a href="singup coach.html"><button>as specialists</button></a>
+      <a href="signup admin.html"><button>as admin</button></a>
+    </div>
+    <div class="login-form" id="login-form">
+      <span class="close-icon" onclick="closeLoginForm()">&times;</span>
+      <h2>Login</h2>
+      <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Login</button>
+        <a href="" style="text-decoration: none;" onclick="forgotPassword()">Forget Account</a>
+        <a href="sing up.html">create Account</a>
+      </form>
+      <div class="error-message" id="error-message" style="display: none;"></div>
+    </div>
+
+    <div class="intro" >
+      <img src="/svg/Online Doctor-rafiki.svg " alt="" class="seqimg">
+      <div class="intro-text">
+        <h3>Welcome to Fitnutrix</h3>
+        <p>
+          <div>Join us to achieve your health</div>
+          <div>and fitness goals</div>
+          <div>with the best trainers and nutritionists.</div>
+        </p>
+        <button class="get-started-btn">Get Started</button>
+      </div>
+      <img src="/svg/coah and plyer.svg " alt="" class="firstimg">
+    </div>
+  </main>
+  <br><br><br>
+  <section id="banner-ad" data-aos="slide-up">
+    <div class="title" style="font-size: 2.2em;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 20px;">Our <span class="title-sous">offers</span></div>
+    <div class="ad-container">
+        <!-- Image Slider -->
+        <div class="slideshow-container">
+            <!-- Slide 1 -->
+            <div class="mySlides fade">
+                <a href="#" class="banner-link">
+                    <img src="/images/event2.png" alt="Banner Ad 1" class="banner-image">
+                </a>
+            </div>
+            <!-- Slide 2 -->
+            <div class="mySlides fade">
+                <a href="#" class="banner-link">
+                    <img src="/images/event3.png" alt="Banner Ad 2" class="banner-image">
+                </a>
+            </div>
+            <!-- Slide 3 -->
+            <div class="mySlides fade">
+                <a href="#" class="banner-link">
+                    <img src="/images/events.png" alt="Banner Ad 3" class="banner-image">
+                </a>
+            </div>
+        </div>
+        <!-- Navigation arrows -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+</section>
+
+  <section id="featured-services" class="featured-services" data-aos="slide-up">
+    <div class="container">
+      <div class="title" style="font-size: 2.2em;
+        font-weight: 800;
+        text-align: center;">Our <span class="title-sous">Service</span></div>
+      <div class="cards">
+        <div class="card">
+          <div class="service-box">
+            <div class="icon"><i class="fas fa-user-md"></i></div>
+            <h4 class="title"><a href=""> Nutrition programs </a></h4>
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio enim laborum ratione.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="service-box">
+            <div class="icon"> <i class="fas fa-dumbbell"></i></div>
+            <h4 class="title"><a href="">Training Programs</a></h4>
+            <p class="description">At vero eos et accusamus et 1 week odio dignissimos ducimus qui blanditiis</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="service-box">
+            <div class="icon"><i class="fas fa-temperature-high"></i></div>
+            <h4 class="title"><a href="">Body temperature</a></h4>
+            <p class="description">Excepteur sint occaecat 37.6 non proident, 98.6 sunt in culpa qui officia</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="service-box">
+            <div class="icon"><i class="fas fa-hand-holding-medical"></i></div>
+            <h4 class="title"><a href="">Medicine use</a></h4>
+            <p class="description">Duis aute dolor 10-12 in reprehenderit in voluptate 8-12 velit esse cillum dolore</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="about" data-aos="slide-up">
+    <div class="container">
+      <div class="content-section">
+        <div class="title">
+          <h1>About <span class="title-sous">Us</span></h1>
+        </div>
+        <div class="content">
+          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
+          <div class="button">
+            <a href="">Read More</a>
+          </div>
+        </div>
+        <div class="social">
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="image-section" data-aos="slide-up">
+        <img src="/images/about us.jpg ">
+      </div>
+    </div>
+  </section>
+  <br><br><br>
+  <section id="trainers" data-aos="slide-up">
+    <div class="title" style="font-size: 2.2em;
+  font-weight: 800;
+  text-align: center;">Our <span class="title-sous">coach</span></div>
+    <div class="slide-container">
+      <div class="slide-content">
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="card-image">
+              <img src="/images/coach1.png" alt="Profile image">
+            </div>
+            <p class="name">Julie Watson</p>
+            <p>fitness</p>
+            <div class="ratings">
+              <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+              <button class="review-btn" id="reviewBtn">Reviews</button>
+
+            </div>
+            <div class="socials">
+              <button class="email"><i class="fas fa-envelope"></i></button>
+              <button class="facebook"><i class="fab fa-facebook-f"></i></button>
+              <button class="instagram"><i class="fab fa-instagram"></i></button>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur delectus, mollitia tenetur libero quam
+              recusandae alias in incidunt.</p>
+            <button class="subscribe">Subscribe</button>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="/images/coach3.png" alt="Profile image">
+            </div>
+            <p class="name">Julie Watson</p>
+            <p>fitness</p>
+            <div class="ratings">
+              <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+              <button class="review-btn" id="reviewBtn">Reviews</button>
+
+            </div>
+            <div class="socials">
+              <button class="email"><i class="fas fa-envelope"></i></button>
+              <button class="facebook"><i class="fab fa-facebook-f"></i></button>
+              <button class="instagram"><i class="fab fa-instagram"></i></button>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur delectus, mollitia tenetur libero quam
+              recusandae alias in incidunt.</p>
+            <button class="subscribe">Subscribe</button>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="/images/coach2.png" alt="Profile image">
+            </div>
+            <p class="name">Julie Watson</p>
+            <p>fitness</p>
+            <div class="ratings">
+              <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+              <button class="review-btn" id="reviewBtn">Reviews</button>
+            </div>
+            <div class="socials">
+              <button class="email"><i class="fas fa-envelope"></i></button>
+              <button class="facebook"><i class="fab fa-facebook-f"></i></button>
+              <button class="instagram"><i class="fab fa-instagram"></i></button>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur delectus, mollitia tenetur libero quam
+              recusandae alias in incidunt.</p>
+            <button class="subscribe">Subscribe</button>
+          </div>
+          <!-- Add more cards here -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="nutritionists" data-aos="slide-up">
+    <div class="title" style="font-size: 2.2em;
+  font-weight: 800;
+  text-align: center;">Our <span class="title-sous">Nutrition specialists</span></div>
+    <div class="slide-container">
+      <div class="slide-content">
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="card-image">
+              <img src="/images/medcin1.png" alt="Profile image">
+            </div>
+            <p class="name">Julie Watson</p>
+            <p>fitness</p>
+            <div class="ratings">
+              <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+              <button class="review-btn" id="reviewBtn">Reviews</button>
+
+            </div>
+            <div class="socials">
+              <button class="email"><i class="fas fa-envelope"></i></button>
+              <button class="facebook"><i class="fab fa-facebook-f"></i></button>
+              <button class="instagram"><i class="fab fa-instagram"></i></button>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur delectus, mollitia tenetur libero quam
+              recusandae alias in incidunt.</p>
+            <button class="subscribe">Subscribe</button>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="/images/medcin2.png" alt="Profile image">
+            </div>
+            <p class="name">Julie Watson</p>
+            <p>fitness</p>
+            <div class="ratings">
+              <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+              <button class="review-btn" id="reviewBtn">Reviews</button>
+
+            </div>
+            <div class="socials">
+              <button class="email"><i class="fas fa-envelope"></i></button>
+              <button class="facebook"><i class="fab fa-facebook-f"></i></button>
+              <button class="instagram"><i class="fab fa-instagram"></i></button>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur delectus, mollitia tenetur libero quam
+              recusandae alias in incidunt.</p>
+            <button class="subscribe">Subscribe</button>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="/images/medcin3.png" alt="Profile image">
+            </div>
+            <p class="name">Julie Watson</p>
+            <p>fitness</p>
+            <div class="ratings">
+              <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+              <button class="review-btn" id="reviewBtn">Reviews</button>
+
+            </div>
+            <div class="socials">
+              <button class="email"><i class="fas fa-envelope"></i></button>
+              <button class="facebook"><i class="fab fa-facebook-f"></i></button>
+              <button class="instagram"><i class="fab fa-instagram"></i></button>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur delectus, mollitia tenetur libero quam
+              recusandae alias in incidunt.</p>
+            <button class="subscribe">Subscribe</button>
+          </div>
+          <!-- Add more cards here -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="events" data-aos="slide-up">
+    <div class="title" style="font-size: 2.2em;
+  font-weight: 800;
+  text-align: center;
+  padding-bottom: 10px;">Our <span class="title-sous">Events</span></div>
+    <div class="container-event">
+      <div class="item-container">
+        <div class="img-container">
+          <img src="/images/Event1.png" alt="Event image">
+        </div>
+
+        <div class="body-container">
+          <div class="overlay"></div>
+
+          <div class="event-info">
+            <p class="title-event">Bubbe's Book Club</p>
+            <div class="separator"></div>
+            <p class="info">Bellmore, NY</p>
+            <p class="price">Free</p>
+
+            <div class="additional-info">
+              <p class="info">
+                <i class="fas fa-map-marker-alt"></i>
+                Grand Central Terminal
+              </p>
+              <p class="info">
+                <i class="far fa-calendar-alt"></i>
+                Sat, Sep 19, 10:00 AM EDT
+              </p>
+
+              <p class="info description">
+                Welcome! Everyone has a unique perspective after reading a book, and we would love you
+                to share yours with us! We meet one Sunday evening <span>more...</span>
+              </p>
+            </div>
+          </div>
+          <button class="action">Book it</button>
+        </div>
+      </div>
+
+      <div class="item-container" >
+        <div class="img-container">
+          <img src="/images/Events2.png" alt="Event image">
+        </div>
+
+        <div class="body-container">
+          <div class="overlay"></div>
+
+          <div class="event-info">
+            <p class="title-event">The Overstory</p>
+            <div class="separator"></div>
+            <p class="info">New York, NY</p>
+            <p class="price">29$</p>
+
+            <div class="additional-info">
+              <p class="info">
+                <i class="fas fa-map-marker-alt"></i>
+                245 W 52nd St, New York
+              </p>
+              <p class="info">
+                <i class="far fa-calendar-alt"></i>
+                Sat, Sep 19, 10:00 AM EDT
+              </p>
+
+              <p class="info description">
+                Welcome! Everyone has a unique perspective after reading a book, and we would love you
+                to share yours with us! We meet one Sunday evening <span>more...</span>
+              </p>
+            </div>
+          </div>
+          <button class="action">Book it</button>
+        </div>
+      </div>
+
+      <div class="item-container">
+        <div class="img-container">
+          <img src="/images/Events2.png" alt="Event image">
+        </div>
+
+        <div class="body-container">
+          <div class="overlay"></div>
+
+          <div class="event-info">
+            <p class="title-event">The NY Festival</p>
+            <div class="separator"></div>
+            <p class="info">New York, NY</p>
+            <p class="price">70$</p>
+
+            <div class="additional-info">
+              <p class="info">
+                <i class="fas fa-map-marker-alt"></i>
+                245 W 52nd St, New York
+              </p>
+              <p class="info">
+                <i class="far fa-calendar-alt"></i>
+                Sat, Sep 19, 10:00 AM EDT
+              </p>
+
+              <p class="info description">
+                Welcome! Everyone has a unique perspective after reading a book, and we would love you
+                to share yours with us! We meet one Sunday evening <span>more...</span>
+              </p>
+            </div>
+          </div>
+          <button class="action">Book it</button>
+        </div>
+      </div>
+
+      <div class="item-container">
+        <div class="img-container">
+          <img src="/images/Event-Poster-Templates-36.png" alt="Event image">
+        </div>
+
+        <div class="body-container">
+          <div class="overlay"></div>
+
+          <div class="event-info">
+            <p class="title-event">Tech Bubble Conf</p>
+            <div class="separator"></div>
+            <p class="info">New York, NY</p>
+            <p class="price">35$</p>
+
+            <div class="additional-info">
+              <p class="info">
+                <i class="fas fa-map-marker-alt"></i>
+                245 W 52nd St, New York
+              </p>
+              <p class="info">
+                <i class="far fa-calendar-alt"></i>
+                Sat, Sep 19, 10:00 AM EDT
+              </p>
+
+              <p class="info description">
+                Welcome! Everyone has a unique perspective after reading a book, and we would love you
+                to share yours with us! We meet one Sunday evening <span>more...</span>
+              </p>
+            </div>
+          </div>
+          <button class="action">Book it</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer data-aos="slide-up">
+    <div class="containere">
+      <div class="row">
+        <div class="col" id="company">
+          <img src="/svg/logo.svg" alt="" class="logo">
+          <p>
+            Fitnutrix is a health and fitness website offering the latest articles and resources on nutrition and
+            exercise. Discover how we can help you achieve your health goals today.
+          </p>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col" id="useful-links">
+          <h3>Useful Links</h3>
+          <div class="links">
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="col" id="contact">
+          <h3>Contact</h3>
+          <div class="contact-details">
+            <i class="fa fa-location"></i>
+            <p>Sports Street, Constantine, Algeria</p>
+          </div>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>+213-123456789</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form">
+          <form action="">
+            <input type="email" placeholder="Email Address">
+            <button><i class="fa fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // demende inscription //
+    const inscriptionButton = document.getElementById('inscription-button');
+    const chooseInscription = document.getElementById('choose-inscription');
+    const closeBtn = chooseInscription.querySelector('.close-btn');
+    closeBtn.addEventListener('click', function() {
+      chooseInscription.style.display = 'none';
+    });
+    inscriptionButton.addEventListener('click', function() {
+      chooseInscription.style.display = 'block';
+    });
+    ///end *****************************///    
+    document.getElementById("login-button").addEventListener("click", function() {
+      document.getElementById("login-form").style.display = "block";
+    });
+    // Function to close login form
+    function closeLoginForm() {
+      document.getElementById("login-form").style.display = "none";
+    }
+    // Function to handle forgot password
+    function forgotPassword() {
+      alert("Please contact support to reset your password.");
+    }
+    // Form submission handling
+    document.getElementById("login-form").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+      // Get form inputs
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      // Check if username and password are correct (for demonstration purposes)
+      if (username === "admin" && password === "password") {
+        // Redirect to dashboard or perform any other action
+        alert("Login successful! Redirecting...");
+        window.location.href = "dashboard.html"; // Change the URL to the dashboard page
+      } else {
+        // Show error message
+        document.getElementById("error-message").innerText = "Invalid username or password. Please try again.";
+        document.getElementById("error-message").style.display = "block";
+      }
+    });
+  </script>
+  <script>
+    // استهداف الزر بواسطة الهوية (ID)
+    var reviewBtn = document.getElementById('reviewBtn');
+  
+    // إضافة مستمع حدث النقر
+    reviewBtn.addEventListener('click', function() {
+      // توجيه المستخدم إلى الصفحة الأخرى عند النقر على الزر
+      window.location.href = '/user/add feddbackuser.html'; // قم بتغيير 'reviews.html' إلى عنوان URL الفعلي للصفحة الأخرى
+    });
+  </script>
+  <script src="/js/dark mode.js "></script>
+  <script src="/js/toglle.js"></script>
+  <script src="/js/slider image .js"></script>
+  <script src="/js/menu bar.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset:100,
+      duration:800
+    });
+
+    </script>
+</body>
+
+</html>
